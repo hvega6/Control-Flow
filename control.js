@@ -75,3 +75,17 @@ console.log("\nPart 2:");
 console.log(`Additional space required: ${(SPACE_REQUIRED - AREA).toFixed(2)} sq meters`); // Output additional space required
 console.log(`New radius: ${NEW_RADIUS.toFixed(2)} meters`); // Output new radius
 
+// Part 3: Errors in Judgement
+const INITIAL_PLANTS_PART3 = 100; // Initial number of plants for part 3
+const SPACE_REQUIRED_PART3 = INITIAL_PLANTS_PART3 * PLANT_SPACE; // Calculate space required for 100 plants
+
+try {
+    if (SPACE_REQUIRED_PART3 > AREA) {
+        throw new Error("Insufficient space for the initial number of plants"); // Throw error if space is insufficient
+    }
+    console.log("\nPart 3: Space is sufficient for initial plants"); // Log if space is sufficient
+} catch (error) {
+    console.log("\nPart 3 Error:", error.message); // Log error message
+    console.log(`Space required: ${SPACE_REQUIRED_PART3.toFixed(2)} sq meters`); // Output space required
+    console.log(`Space available: ${AREA.toFixed(2)} sq meters`); // Output space available
+}
