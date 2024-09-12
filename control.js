@@ -64,3 +64,14 @@ console.log(`Plants: ${PLANTS_AFTER_3_WEEKS}`);
 console.log(`Capacity: ${CAPACITY_PERCENTAGE_3.toFixed(2)}%`);
 console.log(`Action: ${action3}`);
 
+// Part 2: Thinking Bigger
+const WEEKS_PART2 = 10; // Number of weeks for part 2
+const INITIAL_PLANTS_PART2 = 100; // Initial number of plants for part 2
+const PLANTS_AFTER_10_WEEKS = INITIAL_PLANTS_PART2 * Math.pow(2, WEEKS_PART2); // Calculate plants after 10 weeks
+const SPACE_REQUIRED = PLANTS_AFTER_10_WEEKS * PLANT_SPACE; // Calculate space required for 100 plants
+const NEW_RADIUS = Math.sqrt(SPACE_REQUIRED / PI); // Calculate new radius for expanded garden
+
+console.log("\nPart 2:");
+console.log(`Additional space required: ${(SPACE_REQUIRED - AREA).toFixed(2)} sq meters`); // Output additional space required
+console.log(`New radius: ${NEW_RADIUS.toFixed(2)} meters`); // Output new radius
+
