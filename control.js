@@ -63,7 +63,7 @@ console.log("\nAfter 3 weeks:");
 console.log(`Plants: ${PLANTS_AFTER_3_WEEKS}`);
 console.log(`Capacity: ${CAPACITY_PERCENTAGE_3.toFixed(2)}%`);
 console.log(`Action: ${action3}`);
-debugger
+
 
 // Part 2: Thinking Bigger
 const WEEKS_PART2 = 10; // Number of weeks for part 2
@@ -75,7 +75,7 @@ const NEW_RADIUS = Math.sqrt(SPACE_REQUIRED / PI); // Calculate new radius for e
 console.log("\nPart 2:");
 console.log(`Additional space required: ${(SPACE_REQUIRED - AREA).toFixed(2)} sq meters`); // Output additional space required
 console.log(`New radius: ${NEW_RADIUS.toFixed(2)} meters`); // Output new radius
-debugger
+
 
 // Part 3: Errors in Judgement
 const INITIAL_PLANTS_PART3 = 100; // Initial number of plants for part 3
@@ -91,4 +91,3 @@ try {
     console.log(`Space required: ${SPACE_REQUIRED_PART3.toFixed(2)} sq meters`); // Output space required
     console.log(`Space available: ${AREA.toFixed(2)} sq meters`); // Output space available
 }
-debugger
